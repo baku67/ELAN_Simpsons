@@ -1,23 +1,105 @@
 body {
 	font-family: system-ui;
+	opacity: 0;
+	animation: fadeIn 0.3s 0s normal forwards ease-in-out;
+	background-color: #fdd116;
+	text-align: center;
+	margin: 0 auto
 }
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+		right: 0;
+		left: 0;
+		top: 0;
+	}
+}
+
 
 main {
 	background-color: white;
 	padding-top: 20px;
 }
 
+/* ---------------------------ANIMS--------------------------- */
+header {
+	width: 75%;
+	text-align: center;
+	margin: 0 auto;
+	opacity: 0;
+	animation: fadeIn 0.3s 0.3s normal forwards ease-in-out;
+}
+
+nav {
+	opacity: 0;
+	animation: fadeIn 0.3s 0.6s normal forwards ease-in-out;
+
+	position: relative;
+	left: -200px;
+}
+
+nav ul {
+	border-radius: 5px;
+}
+
+article {
+	opacity: 0;
+	animation: fadeIn 0.3s 0.9s normal forwards ease-in-out;
+
+	position: relative;
+	top: 500px;
+}
+
+aside {
+	opacity: 0;
+	animation: fadeIn 0.3s 1.2s normal forwards ease-in-out;
+
+	position: relative;
+	right: -200px;
+
+	border-radius: 5px;
+}
+
+aside img {
+	border-radius: 5px;
+}
+
+
 /* ---------------------------HEADER--------------------------- */
 h1 {
-	text-shadow: 0 0 black;
+	/* text-shadow: 0 0 black; */
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6), 1px -1px 0 rgba(0, 0, 0, 0.6), -1px 1px 0 rgba(0, 0, 0, 0.6), 1px 1px 0 rgba(0, 0, 0, 0.6);
+	letter-spacing: 2px;
 	margin-block-start: 0.5em;
 	margin-block-end: 0.5em;
 }
 
 h3 {
+	background-color: #4b8ecd;
+	color: white;
+	font-weight: bold;
+
 	text-shadow: 0 0 black;
 	margin-block-start: 0em;
 	margin-block-end: 0em;
+	padding: 5px 0px;
+
+	animation: test 1s 0.5s normal 3 forwards ease-in-out;
+}
+
+@keyframes test {
+	from {
+		transform: rotateX('0deg');
+	}
+
+	to {
+		transform: rotateX('360deg');
+	}
 }
 
 figure {
@@ -50,6 +132,14 @@ li {
 	cursor: pointer;
 	text-decoration: underline;
 	line-height: 130%;
+
+	border-radius: 2px;
+	transition: all 0.3s;
+}
+
+li:hover {
+	background-color: white;
+	color: #4b8ecd
 }
 
 aside {
