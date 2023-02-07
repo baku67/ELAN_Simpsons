@@ -1,0 +1,66 @@
+body {
+	font-family: system-ui;
+}
+
+main {
+	background-color: white;
+	padding-top: 20px;
+}
+
+/* ---------------------------HEADER--------------------------- */
+h1 {
+	text-shadow: 0 0 black;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+}
+
+h3 {
+	text-shadow: 0 0 black;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
+figure {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+img {
+	/* Fix l'espace apres l'img (car pas de figcaption?) */
+	vertical-align: top;
+}
+
+ul {
+	padding: 8px 20px;
+	list-style-type: none;
+	background-color: #4b8ecd;
+	color: white;
+	position: relative;
+	margin-left: 15px;
+	height: fit-content;
+}
+
+a {
+	color: white;
+}
+
+li {
+	cursor: pointer;
+	text-decoration: underline;
+	line-height: 130%;
+}
+
+aside {
+	margin-bottom: 30px;
+}
+
+footer {
+	margin-top: 25px;
+	padding: 5px 0;
+	background-color: #0b4880;
+	color: white;
+	font-size: 80%;
+
+}
